@@ -1,0 +1,59 @@
+.card {
+    border: none;
+    padding: 48px 40px 32px;
+    border-radius: 28px;
+    transition: box-shadow .3s ease;
+
+    &-icon {
+        max-height: 44px;
+        margin-bottom: 2rem;
+    }
+
+    &-title {
+        font-size: 1.75rem;
+        letter-spacing: -.025rem;
+        margin-bottom: 0.75rem;
+    }
+
+    &-lead {
+        font-size: .875rem;
+        letter-spacing: -.01rem;
+    }
+
+    &-link {
+        border-bottom: 1px solid #1B5B31;
+        will-change: opacity;
+        transition: border-color .3s ease, opacity .3s ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: .8;
+        }
+    }
+
+    &-link-icon {
+        will-change: transform;
+        transition: transform .3s ease;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: 0 2px 10px rgba(var(--bs-dark), .15);
+
+        .card-link {
+            border-color: transparent;
+        }
+
+        .card-link-icon {
+            transform: translateX(10px)
+        }
+    }
+
+    @media (max-width: 576px) {
+        & {
+            padding: 24px 24px 16px;
+        }
+    }
+}

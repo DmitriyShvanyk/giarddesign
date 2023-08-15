@@ -1,0 +1,38 @@
+@charset 'utf-8';
+
+
+
+/* ==================== PLUGINS ==================== */
+
+@import url(../vendor/fancybox/fancybox.css);
+@import url(../vendor/aos/aos.css);
+
+
+
+/* ==================== ABSTRACTS ==================== */
+
+@import 'abstracts/variable';
+
+
+
+/* ==================== BASE ==================== */
+
+@import 'base/basic';
+
+
+
+/* ==================== COMPONENTS ==================== */
+
+@import 'components/card';
+@import 'components/carousel';
+
+
+
+/* ==================== BLOCKS ==================== */
+
+@import 'blocks/navbar';
+@import 'blocks/intro';
+@import 'blocks/offer';
+@import 'blocks/projects';
+@import 'blocks/contact';
+@import 'blocks/footer';
