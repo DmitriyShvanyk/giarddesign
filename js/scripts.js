@@ -32,13 +32,40 @@
 	}
 
 
+	// modal image
+	function initModalImage() {
+		const projects = document.querySelector('.projects');
+		if(!projects) return;
+
+		const projectsItems = projects.querySelector('.projects-items');
+		const modal = document.querySelector('#modalImage');
+
+		if(!modal) return;
+
+		const modalBody = modal.querySelector('.modal-body');
+
+		projectsItems.addEventListener('click', (e) => {
+			const item = e.target.closest('.projects-item')
+
+			if(item) {
+				modalBody.innerHTML = ''
+
+				const image = document.createElement('img')
+				image.src=item.href
+				image.alt=""
+				image.classList.add('img-fluid', 'object-fit-cover')
+
+				modalBody.appendChild(image)
+			}
+		})
+	}
+
 
 	// years
 	function setCurrentYears() {
 		const yearsElems = document.querySelectorAll('.js-years');
 		return yearsElems.forEach(el => el.textContent = new Date().getFullYear());
 	}
-
 
 
 	// carousel
@@ -60,23 +87,15 @@
 
 
 	window.addEventListener('DOMContentLoaded', () => {
-		// loader
 		hideLoader();
-
-		// more projects
 		showMoreProjects();
-
+		initModalImage();
 
 		setTimeout(() => {
-			// aos
 			AOS.init({
 				once: true,
 			});
 
-			// fancybox
-			Fancybox.bind("[data-fancybox]", {});
-
-			// current yers
 			setCurrentYears();
 		}, 1000);
 	});

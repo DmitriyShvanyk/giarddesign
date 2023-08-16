@@ -21,10 +21,10 @@
 	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 
 	<!-- preload style -->
-	<link href="css/style.min.css?v=1.0.0" rel="preload" as="style">
+	<link href="css/style.min.css?v=99" rel="preload" as="style">
 
 	<!-- main style -->
-	<link href="css/style.min.css?v=1.0.0" rel="stylesheet">
+	<link href="css/style.min.css?v=99" rel="stylesheet">
 </head>
 
 <body>
@@ -44,15 +44,12 @@
 				<a class="navbar-brand" href="#">
 					<img src="images/logo.svg" alt="GiardDesign">
 				</a>
-				<button class="btn search position-relative order-md-1 ms-auto ms-lg-1 py-1 px-2 px-md-0" data-bs-toggle="modal" data-bs-target="#modalSearch" aria-label="Search">
+				<button class="btn search position-relative order-md-1 ms-auto ms-lg-1 py-1 px-2 px-md-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarSearch" aria-controls="offcanvasNavbarSearch" aria-label="Toggle search">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z"
-							fill="#111111" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z" fill="#111111" />
 					</svg>
 				</button>
-				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
@@ -87,6 +84,26 @@
 						</ul>
 					</div>
 				</div>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarSearch">
+					<div class="offcanvas-header">
+						<img src="images/logo.svg" alt="GiardDesign">
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<form class="d-flex w-100" role="search">
+							<div class="input-group d-flex flex-nowrap w-100">
+								<input class="form-control rounded-pill px-4" type="search" placeholder="Search" aria-label="Search" required>
+								<button class="btn btn-dark px-3 input-group-text" type="submit">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z"
+											fill="currentColor" />
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</nav>
 		<!--navbar.end-->
@@ -99,7 +116,7 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<section class="section intro d-md-flex position-relative bg-beige">
-							<picture class="section-pict object-fit-cover d-block h-100" data-aos="fade-left" data-aos-duration="1000">
+							<picture class="section-pict object-fit-cover d-block h-100">
 								<source srcset="images/intro/pict.webp 1x, images/intro/pict@2x.webp 2x" media="(min-width: 768px)">
 								<source srcset="images/intro/pict-xs.webp 1x, images/intro/pict-xs@2x.webp 2x" media="(max-width: 767px)">
 								<img class="d-block w-100 h-100 object-fit-cover" src="images/intro/pict-xs.webp" alt="Nowoczesna aranżacja Twojego ogrodu">
@@ -107,14 +124,17 @@
 							<div class="container section-container">
 								<div class="row h-100 text-center text-md-start">
 									<div
-										class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-start justify-content-center" data-aos="fade-right" data-aos-duration="1000">
+										class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-start justify-content-center">
 										<div class="section-content w-100">
-											<h1 class="h1 section-title font-montserrat mt-0">Nowoczesna aranżacja<br>
-												Twojego ogrodu</h1>
-											<p class="section-text mx-auto mx-md-0">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+											<h1 class="h1 section-title font-montserrat mt-0" data-aos="fade-up" data-aos-duration="1000">
+												Nowoczesna aranżacja<br> Twojego ogrodu
+											</h1>
+											<p class="section-text mx-auto mx-md-0" data-aos="fade-up" data-aos-duration="1000">
+												Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
 												realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego
-												projektu.</p>
-											<div class="section-buttons d-flex flex-wrap justify-content-center justify-content-md-start">
+												projektu.
+											</p>
+											<div class="section-buttons d-flex flex-wrap justify-content-center justify-content-md-start" data-aos="fade-up" data-aos-duration="1000">
 												<a href="#" class="btn btn-success rounded-pill">Skontaktuj się z nami</a>
 												<a href="#projects"
 													class="btn btn-outline-success rounded-pill d-inline-flex align-items-center">
@@ -273,7 +293,7 @@
 
 			<!--about.begin-->
 			<section class="section about d-md-flex position-relative bg-success" id="about">
-				<picture class="section-pict object-fit-cover d-block h-100" data-aos="fade-right" data-aos-duration="1000">
+				<picture class="section-pict object-fit-cover d-block h-100">
 					<source srcset="images/about/pict.webp 1x, images/about/pict@2x.webp 2x" media="(min-width: 768px)">
 					<source srcset="images/about/pict-xs.webp 1x, images/about/pict-xs@2x.webp 2x" media="(max-width: 767px)">
 					<img class="d-block w-100 h-100 object-fit-cover" src="images/about/pict-xs.webp" loading="lazy" alt="O firmie Tworzymy z pasją">
@@ -281,19 +301,19 @@
 				<div class="container section-container">
 					<div class="row h-100 text-center text-md-start">
 						<div
-							class="col-lg-5 col-md-6 col-sm-12 offset-lg-7 offset-md-6 d-flex flex-column align-items-start justify-content-center" data-aos="fade-left" data-aos-duration="1000">
+							class="col-lg-5 col-md-6 col-sm-12 offset-lg-7 offset-md-6 d-flex flex-column align-items-start justify-content-center">
 							<div class="section-content w-100 ps-md-2 text-light">
 								<p class="lead">O firmie</p>
-								<h2 class="h2 section-title font-montserrat mt-0">
+								<h2 class="h2 section-title font-montserrat mt-0" data-aos="fade-up" data-aos-duration="1000">
 									<span class="font-montserrat">Tworzymy<br> z</span>
 									<em>pasją</em>
 								</h2>
-								<p class="section-text mx-auto mx-md-0">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+								<p class="section-text mx-auto mx-md-0" data-aos="fade-up" data-aos-duration="1000">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
 									wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i
 									realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne,
 									które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody
 									małoobsługowe, dostosowane do współczesnego trybu życia.</p>
-								<div class="section-buttons d-flex flex-wrap justify-content-center justify-content-md-start">
+								<div class="section-buttons d-flex flex-wrap justify-content-center justify-content-md-start" data-aos="fade-up" data-aos-duration="1000">
 									<button type="button"
 										class="btn btn-outline-light rounded-pill d-inline-flex align-items-center">
 										Poznaj nas bliżej
@@ -324,96 +344,59 @@
 					</div>
 					<div class="projects-body position-relative">
 						<div class="projects-items">
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/01.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/01.webp"
-									srcset="images/projects/01@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/01@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/01.webp" srcset="images/projects/01@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/02.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/02.webp"
-									srcset="images/projects/02@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/02@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/02.webp" srcset="images/projects/02@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/03.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/03.webp"
-									srcset="images/projects/03@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/03@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/03.webp" srcset="images/projects/03@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/04.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/04.webp"
-									srcset="images/projects/04@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/04@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/04.webp" srcset="images/projects/04@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/05.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/05.webp"
-									srcset="images/projects/05@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/05@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/05.webp" srcset="images/projects/05@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/06.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/06.webp"
-									srcset="images/projects/06@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/06@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/06.webp" srcset="images/projects/06@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/07.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/07.webp"
-									srcset="images/projects/07@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/07@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/07.webp" srcset="images/projects/07@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/08.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/08.webp"
-									srcset="images/projects/08@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/08@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/08.webp" srcset="images/projects/08@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/09.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/09.webp"
-									srcset="images/projects/09@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/09@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/09.webp" srcset="images/projects/09@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/10.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/10.webp"
-									srcset="images/projects/10@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/10@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/10.webp" srcset="images/projects/10@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/11.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/11.webp"
-									srcset="images/projects/11@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/11@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/11.webp" srcset="images/projects/11@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/12.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/12.webp"
-									srcset="images/projects/12@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/12@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/12.webp" srcset="images/projects/12@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/04.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/04.webp"
-									srcset="images/projects/04@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/04@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/04.webp" srcset="images/projects/04@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/05.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/05.webp"
-									srcset="images/projects/05@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/05@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/05.webp" srcset="images/projects/05@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/06.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/06.webp"
-									srcset="images/projects/06@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/06@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/06.webp" srcset="images/projects/06@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/07.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/07.webp"
-									srcset="images/projects/07@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/07@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/07.webp" srcset="images/projects/07@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/08.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/08.webp"
-									srcset="images/projects/08@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/08@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/08.webp" srcset="images/projects/08@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
-							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/09.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/09.webp"
-									srcset="images/projects/09@2x.webp 2x" loading="lazy" alt="Projekt">
+							<a class="projects-item d-flex position-relative overflow-hidden" href="images/projects/09@2x.webp" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/09.webp" srcset="images/projects/09@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 						</div>
 						<div class="projects-overlay"></div>
@@ -546,38 +529,20 @@
 	</div>
 	<!--root.end-->
 
-	<!--modalSearch.begin-->
-	<div class="modal fade" id="modalSearch" tabindex="-1" aria-labelledby="modalSearch" aria-hidden="true">
-		<div class="modal-dialog">
+	<!--modalImage.begin-->
+	<div class="modal fade" id="modalImage" tabindex="-1" aria-labelledby="modalSearch" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
-				<div class="modal-header">
-					<img src="images/logo.svg" alt="GiardDesign">
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<form class="d-flex" role="search">
-						<div class="input-group d-flex flex-nowrap w-100">
-							<input class="form-control rounded-pill px-4" type="search" placeholder="Search" aria-label="Search" required>
-							<button class="btn btn-dark px-3 input-group-text" type="submit">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd" clip-rule="evenodd"
-										d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z"
-										fill="currentColor" />
-								</svg>
-							</button>
-						</div>
-					</form>
-				</div>
+				<div class="modal-body ratio ratio-4x3"></div>
 			</div>
 		</div>
 	</div>
-	<!--modalSearch.end-->
+	<!--modalImage.end-->
 
 	<!--scripts.begin-->
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-	<script defer src="vendor/fancybox/fancybox.umd.js"></script>
 	<script defer src="vendor/aos/aos.js"></script>
-	<script defer src="js/scripts.js?v=1.0.0"></script>
+	<script defer src="js/scripts.js?v=99"></script>
 	<!--scripts.end-->
 
 </body>
