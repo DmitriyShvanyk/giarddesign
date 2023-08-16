@@ -119,6 +119,7 @@ $theme-colors: map-remove($theme-colors, "info", "primary", "warning", "secondar
 @import 'components/card';
 @import 'components/carousel';
 @import 'components/dropdown';
+@import 'components/loader';
 
 
 /* ==================== 8.3 BLOCKS ==================== */

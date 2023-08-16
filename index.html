@@ -21,13 +21,19 @@
 	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 
 	<!-- preload style -->
-	<link href="css/style.min.css?v=1.0" rel="preload" as="style">
+	<link href="css/style.min.css?v=1.0.0" rel="preload" as="style">
 
 	<!-- main style -->
-	<link href="css/style.min.css?v=1.0" rel="stylesheet">
+	<link href="css/style.min.css?v=1.0.0" rel="stylesheet">
 </head>
 
 <body>
+
+	<!--loader.begin-->
+	<div class="loader bg-white h-100 w-100 position-fixed d-flex">
+		<div class="loader-circle"></div>
+	</div>
+	<!--loader.end-->
 
 	<!--root.begin-->
 	<div class="root d-flex flex-column min-vh-100">
@@ -94,9 +100,9 @@
 					<div class="carousel-item active">
 						<section class="section intro d-md-flex position-relative bg-beige">
 							<picture class="section-pict object-fit-cover d-block h-100" data-aos="fade-left" data-aos-duration="1000">
-								<source srcset="images/intro/pict.png 1x, images/intro/pict@2x.png 2x" media="(min-width: 768px)">
-								<source srcset="images/intro/pict-xs.png 1x, images/intro/pict-xs@2x.png 2x" media="(max-width: 767px)">
-								<img class="d-block w-100 h-100 object-fit-cover" src="images/intro/pict-xs.png" loading="lazy" alt="Nowoczesna aranżacja Twojego ogrodu">
+								<source srcset="images/intro/pict.webp 1x, images/intro/pict@2x.webp 2x" media="(min-width: 768px)">
+								<source srcset="images/intro/pict-xs.webp 1x, images/intro/pict-xs@2x.webp 2x" media="(max-width: 767px)">
+								<img class="d-block w-100 h-100 object-fit-cover" src="images/intro/pict-xs.webp" alt="Nowoczesna aranżacja Twojego ogrodu">
 							</picture>
 							<div class="container section-container">
 								<div class="row h-100 text-center text-md-start">
@@ -130,9 +136,9 @@
 					<div class="carousel-item">
 						<section class="section intro d-md-flex position-relative bg-beige">
 							<picture class="section-pict object-fit-cover d-block h-100" data-aos="fade-left" data-aos-duration="1000">
-								<source srcset="images/intro/pict2.png 1x, images/intro/pict2@2x.png 2x" media="(min-width: 768px)">
-								<source srcset="images/intro/pict2-xs.png 1x, images/intro/pict2-xs@2x.png 2x" media="(max-width: 767px)">
-								<img class="d-block w-100 h-100 object-fit-cover" src="images/intro/pict2-xs.png" loading="lazy" alt="Nowoczesna aranżacja Twojego ogrodu">
+								<source srcset="images/intro/pict2.webp 1x, images/intro/pict2@2x.webp 2x" media="(min-width: 768px)">
+								<source srcset="images/intro/pict2-xs.webp 1x, images/intro/pict2-xs@2x.webp 2x" media="(max-width: 767px)">
+								<img class="d-block w-100 h-100 object-fit-cover" src="images/intro/pict2-xs.webp" alt="Nowoczesna aranżacja Twojego ogrodu">
 							</picture>
 							<div class="container section-container">
 								<div class="row h-100 text-center text-md-start">
@@ -268,9 +274,9 @@
 			<!--about.begin-->
 			<section class="section about d-md-flex position-relative bg-success" id="about">
 				<picture class="section-pict object-fit-cover d-block h-100" data-aos="fade-right" data-aos-duration="1000">
-					<source srcset="images/about/pict.png 1x, images/about/pict@2x.png 2x" media="(min-width: 768px)">
-					<source srcset="images/about/pict-xs.png 1x, images/about/pict-xs@2x.png 2x" media="(max-width: 767px)">
-					<img class="d-block w-100 h-100 object-fit-cover" src="images/about/pict-xs.png" loading="lazy" alt="O firmie Tworzymy z pasją">
+					<source srcset="images/about/pict.webp 1x, images/about/pict@2x.webp 2x" media="(min-width: 768px)">
+					<source srcset="images/about/pict-xs.webp 1x, images/about/pict-xs@2x.webp 2x" media="(max-width: 767px)">
+					<img class="d-block w-100 h-100 object-fit-cover" src="images/about/pict-xs.webp" loading="lazy" alt="O firmie Tworzymy z pasją">
 				</picture>
 				<div class="container section-container">
 					<div class="row h-100 text-center text-md-start">
@@ -319,95 +325,95 @@
 					<div class="projects-body position-relative">
 						<div class="projects-items">
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/01.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/01.png"
-									srcset="images/projects/01@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/01.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/01.webp"
+									srcset="images/projects/01@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/02.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/02.png"
-									srcset="images/projects/02@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/02.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/02.webp"
+									srcset="images/projects/02@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/03.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/03.png"
-									srcset="images/projects/03@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/03.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/03.webp"
+									srcset="images/projects/03@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/04.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/04.png"
-									srcset="images/projects/04@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/04.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/04.webp"
+									srcset="images/projects/04@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/05.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/05.png"
-									srcset="images/projects/05@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/05.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/05.webp"
+									srcset="images/projects/05@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/06.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/06.png"
-									srcset="images/projects/06@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/06.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/06.webp"
+									srcset="images/projects/06@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/07.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/07.png"
-									srcset="images/projects/07@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/07.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/07.webp"
+									srcset="images/projects/07@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/08.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/08.png"
-									srcset="images/projects/08@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/08.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/08.webp"
+									srcset="images/projects/08@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/09.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/09.png"
-									srcset="images/projects/09@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/09.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/09.webp"
+									srcset="images/projects/09@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/10.jpg" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/10.jpg"
-									srcset="images/projects/10@2x.jpg 2x" loading="lazy" alt="Projekt">
+								href="images/projects/10.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/10.webp"
+									srcset="images/projects/10@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/11.jpg" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/11.jpg"
-									srcset="images/projects/11@2x.jpg 2x" loading="lazy" alt="Projekt">
+								href="images/projects/11.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/11.webp"
+									srcset="images/projects/11@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/12.jpg" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/12.jpg"
-									srcset="images/projects/12@2x.jpg 2x" loading="lazy" alt="Projekt">
+								href="images/projects/12.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/12.webp"
+									srcset="images/projects/12@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/04.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/04.png"
-									srcset="images/projects/04@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/04.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/04.webp"
+									srcset="images/projects/04@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/05.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/05.png"
-									srcset="images/projects/05@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/05.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/05.webp"
+									srcset="images/projects/05@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/06.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/06.png"
-									srcset="images/projects/06@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/06.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/06.webp"
+									srcset="images/projects/06@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/07.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/07.png"
-									srcset="images/projects/07@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/07.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/07.webp"
+									srcset="images/projects/07@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/08.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/08.png"
-									srcset="images/projects/08@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/08.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/08.webp"
+									srcset="images/projects/08@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 							<a class="projects-item d-flex position-relative overflow-hidden"
-								href="images/projects/09.png" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
-								<img class="projects-img object-fit-cover w-100" src="images/projects/09.png"
-									srcset="images/projects/09@2x.png 2x" loading="lazy" alt="Projekt">
+								href="images/projects/09.webp" data-fancybox="gallery" aria-label="Projekt" data-aos="fade-up" data-aos-duration="1000">
+								<img class="projects-img object-fit-cover w-100" src="images/projects/09.webp"
+									srcset="images/projects/09@2x.webp 2x" loading="lazy" alt="Projekt">
 							</a>
 						</div>
 						<div class="projects-overlay"></div>
@@ -571,7 +577,7 @@
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script defer src="vendor/fancybox/fancybox.umd.js"></script>
 	<script defer src="vendor/aos/aos.js"></script>
-	<script defer src="js/scripts.js?v=1.0"></script>
+	<script defer src="js/scripts.js?v=1.0.0"></script>
 	<!--scripts.end-->
 
 </body>

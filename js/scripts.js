@@ -16,10 +16,6 @@
 
 
 
-	// gallery
-	Fancybox.bind("[data-fancybox]", {});
-
-
 	// projects
 	function showMoreProjects() {
 		const projects = document.querySelector('.projects');
@@ -37,15 +33,12 @@
 
 
 
-
-
-
-
 	// years
 	function setCurrentYears() {
 		const yearsElems = document.querySelectorAll('.js-years');
 		return yearsElems.forEach(el => el.textContent = new Date().getFullYear());
 	}
+
 
 
 	// carousel
@@ -56,14 +49,36 @@
 	});
 
 
-	window.addEventListener('DOMContentLoaded', () => {
-		showMoreProjects();
-		setCurrentYears();
+	// loader
+	function hideLoader() {
+		const loader = document.querySelector('.loader');
+		setTimeout(()=> {
+			loader.classList.remove('d-flex');
+			loader.classList.add('d-none');
+		}, 1000);
+	}
 
-		// aos
-		AOS.init({
-			once: true,
-		});
+
+	window.addEventListener('DOMContentLoaded', () => {
+		// loader
+		hideLoader();
+
+		// more projects
+		showMoreProjects();
+
+
+		setTimeout(() => {
+			// aos
+			AOS.init({
+				once: true,
+			});
+
+			// fancybox
+			Fancybox.bind("[data-fancybox]", {});
+
+			// current yers
+			setCurrentYears();
+		}, 1000);
 	});
 
 })();
