@@ -25,14 +25,16 @@
 
 @import 'components/card';
 @import 'components/carousel';
-
+@import 'components/dropdown';
 
 
 /* ==================== BLOCKS ==================== */
 
 @import 'blocks/navbar';
-@import 'blocks/intro';
+@import 'blocks/section';
 @import 'blocks/offer';
+@import 'blocks/about';
 @import 'blocks/projects';
 @import 'blocks/contact';
 @import 'blocks/footer';
+@import 'blocks/modal-search';

@@ -1,0 +1,13 @@
+.about {
+    .section-pict {
+        right: auto;
+        left: 0;
+        width: 47.5%;
+    }
+
+    @media (min-width: 992px) {
+        & {
+            min-height: 720px;
+        }
+    }
+}

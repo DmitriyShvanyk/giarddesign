@@ -10,17 +10,20 @@ $font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 $font-montserrat: 'Montserrat', $font-family-sans-serif;
 
 $dropdown-font-size: .875rem;
+$caret-width: 0;
 
 $btn-padding-y: .75rem;
 $btn-padding-x:  1.5rem;
 
-$navbar-padding-y: 1.25rem;
+$navbar-padding-y: 1.1rem;
 $navbar-nav-link-padding-x: 1.5rem;
 $nav-link-height: 1rem;
 
 $carousel-control-color: $dark;
 $carousel-control-width: 96px;
 $carousel-control-opacity: 1;
+
+
 
 
 @import '../bootstrap/variables';
@@ -35,7 +38,6 @@ $beige: (
 
 $theme-colors: map-merge($theme-colors, $beige);
 
-
 @import '../bootstrap/maps';
 @import '../bootstrap/mixins';
 @import '../bootstrap/root';
@@ -49,14 +51,14 @@ $theme-colors: map-merge($theme-colors, $beige);
 @import '../bootstrap/utilities/api';
 
 
+@import '../bootstrap/close';
 @import '../bootstrap/buttons';
+@import '../bootstrap/dropdown';
+@import '../bootstrap/offcanvas';
 @import '../bootstrap/nav';
 @import '../bootstrap/navbar';
 @import '../bootstrap/containers';
 @import '../bootstrap/card';
-@import '../bootstrap/dropdown';
-@import '../bootstrap/offcanvas';
 @import '../bootstrap/modal';
-@import '../bootstrap/close';
 @import '../bootstrap/forms/form-control';
 @import '../bootstrap/carousel';

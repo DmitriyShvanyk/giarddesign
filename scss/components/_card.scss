@@ -2,7 +2,8 @@
     border: none;
     padding: 48px 40px 32px;
     border-radius: 28px;
-    transition: box-shadow .3s ease;
+    will-change: transform;
+    transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
 
     &-icon {
         max-height: 44px;
@@ -16,20 +17,13 @@
     }
 
     &-lead {
-        font-size: .875rem;
         letter-spacing: -.01rem;
     }
 
     &-link {
-        border-bottom: 1px solid #1B5B31;
+        border-bottom: 1px solid $success;
         will-change: opacity;
-        transition: border-color .3s ease, opacity .3s ease;
-
-        &:hover,
-        &:focus,
-        &:active {
-            opacity: .8;
-        }
+        transition: border-color .3s ease;
     }
 
     &-link-icon {
@@ -40,7 +34,8 @@
     &:hover,
     &:focus,
     &:active {
-        box-shadow: 0 2px 10px rgba(var(--bs-dark), .15);
+        box-shadow: 0 1px 15px rgba($dark, .05);
+        transform: translateY(-10px);
 
         .card-link {
             border-color: transparent;
