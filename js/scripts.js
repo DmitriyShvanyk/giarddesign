@@ -38,10 +38,7 @@
 
 
 
-	// aos
-	AOS.init({
-		once: true,
-	});
+
 
 
 	// years
@@ -59,10 +56,14 @@
 	});
 
 
-
 	window.addEventListener('DOMContentLoaded', () => {
 		showMoreProjects();
 		setCurrentYears();
+
+		// aos
+		AOS.init({
+			once: true,
+		});
 	});
 
 })();
