@@ -106,7 +106,7 @@ $theme-colors: map-remove($theme-colors, "info", "primary", "warning", "secondar
 
 /* ==================== 8.1 PLUGINS ==================== */
 
-@import url(../vendor/aos/aos.css);
+@import '../vendor/aos/scss/aos';
 
 
 
