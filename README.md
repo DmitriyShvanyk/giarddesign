@@ -7,6 +7,13 @@ https://giard-ba4m.vercel.app
 Nowoczesna aranżacja Twojego ogrodu
 
 
+
+## Variant using Parcel
+
+`https://github.com/DmitriyShvanyk/giard.git`
+
+
+
 ## Start
 
 To run the project locally, you need to download it
