@@ -15,8 +15,8 @@
 		{ img: 'images/projects/08.webp', img2x: 'images/projects/08@2x.webp', caption: 'Caption 8'},
 		{ img: 'images/projects/09.webp', img2x: 'images/projects/09@2x.webp', caption: 'Caption 9'},
 		{ img: 'images/projects/10.webp', img2x: 'images/projects/10@2x.webp', caption: 'Caption 10'},
-		{ img: 'images/projects/11.jpg', img2x: 'images/projects/11@2x.jpg', caption: 'Caption 11'},
-		{ img: 'images/projects/12.jpg', img2x: 'images/projects/12@2x.jpg', caption: 'Caption 12'},
+		{ img: 'images/projects/11.webp', img2x: 'images/projects/11@2x.webp', caption: 'Caption 11'},
+		{ img: 'images/projects/12.webp', img2x: 'images/projects/12@2x.webp', caption: 'Caption 12'},
 		{ img: 'images/projects/05.webp', img2x: 'images/projects/05@2x.webp', caption: 'Caption 13'},
 		{ img: 'images/projects/06.webp', img2x: 'images/projects/06@2x.webp', caption: 'Caption 14'},
 		{ img: 'images/projects/07.webp', img2x: 'images/projects/07@2x.webp', caption: 'Caption 15'},
@@ -34,6 +34,8 @@
 
 	// render
 	function renderProjects() {
+		projectsItems.innerHTML = '';
+
 		imagesList.forEach((item, idx) => {
 			const project = `
 				<a class="projects-item d-flex position-relative overflow-hidden" href="${item.img2x}" data-bs-toggle="modal" data-bs-target="#modalImage" aria-label="${item.caption}" data-id="${idx+1}" data-aos="fade-up" data-aos-duration="1000">
