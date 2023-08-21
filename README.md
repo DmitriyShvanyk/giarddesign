@@ -2,7 +2,7 @@
 
 #### Version 1.0.0
 
-https://soledar10.com.ua/assets/templates/layout/giarddesign/
+https://giard-ba4m.vercel.app
 
 Nowoczesna aranżacja Twojego ogrodu
 
