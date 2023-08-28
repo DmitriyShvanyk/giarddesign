@@ -1,8 +1,9 @@
 .carousel {
     .carousel-controls {
-        bottom: 0; right: 0;
-        width: calc($carousel-control-width * 2);
-        height: $carousel-control-width;
+        bottom: 0;
+        right: 0;
+        width: calc($carousel-control-width / 2 * 2);
+        height: calc($carousel-control-width / 2);
     }
 
     .btn {
@@ -37,20 +38,8 @@
 
     @media (max-width: 767px) {
         .carousel-controls {
-            top: 10%;
-            bottom: auto;
-            left: 0;
-            right: auto;
-            width: 100%;
-            justify-content: space-between;
-            pointer-events: none;
-            height: calc($carousel-control-width / 2);
-
             .btn {
-                pointer-events: auto;
                 padding: 0;
-                width: calc($carousel-control-width / 2);
-                height: calc($carousel-control-width / 2);
             }
         }
     }
