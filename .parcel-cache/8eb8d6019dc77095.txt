@@ -15,7 +15,7 @@
 110C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\@swc\helpers\_\_interop_require_wildcard\package.json133370223684387220 0
 85C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\@parcel\workers\lib\index.js133370223699412717 0
 88C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\@parcel\workers\src\cpuCount.js133370223699382715 0
-48C:\Users\Dmitriy\Desktop\Github\giarddesign\dist133377071503280402 1
+48C:\Users\Dmitriy\Desktop\Github\giarddesign\dist133377073377977752 1
 106C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\@swc\core\bindings\binding_core_wasm\package.json133370223682347227 0
 54C:\Users\Dmitriy\Desktop\Github\giarddesign\.gitignore133370281636873514 0
 95C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\caniuse-lite\data\features\minmaxwh.js133370223686307206 0
@@ -3349,7 +3349,7 @@
 102C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\@swc\helpers\_\_set_prototype_of\package.json133370223684577213 0
 113C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\csso\node_modules\css-tree\lib\syntax\node\Percentage.js133370223683107234 0
 88C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\caniuse-lite\data\regions\IS.js133370223685437207 0
-89C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\bootstrap\scss\mixins\_grid.scss133377059165184931 0
+89C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\bootstrap\scss\mixins\_grid.scss133377073199429177 0
 94C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\@parcel\cache\src\IDBCache.browser.js133370223700734380 0
 107C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\csso\node_modules\css-tree\lib\syntax\node\Rule.js133370223683187231 0
 111C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\csso\node_modules\css-tree\lib\syntax\node\Selector.js133370223683207255 0
@@ -3690,7 +3690,7 @@
 93C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\css-tree\lib\syntax\scope\default.js133370223682617228 0
 91C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\css-tree\lib\syntax\scope\index.js133370223682897248 0
 103C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\css-select\lib\pseudo-selectors\index.d.ts.map133370223680307208 0
-71C:\Users\Dmitriy\Desktop\Github\giarddesign\dist\index.e8265c92.css.map133377071503280402 0
+71C:\Users\Dmitriy\Desktop\Github\giarddesign\dist\index.e8265c92.css.map133377073377968030 0
 79C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\@swc\core\CHANGELOG.md133370223684747199 0
 92C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\css-tree\lib\syntax\pseudo\index.js133370223682887201 0
 102C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\css-tree\lib\syntax\node\AttributeSelector.js133370223682247222 0
@@ -6850,7 +6850,7 @@
 84C:\Users\Dmitriy\Desktop\Github\giarddesign\node_modules\.bin\update-browserslist-db133370223922114519 0
 69C:\Users\Dmitriy\Desktop\Github\giarddesign\dist\favicon.824cf0c5.ico133377070489221645 0
 70C:\Users\Dmitriy\Desktop\Github\giarddesign\dist\index.975ef6c8.js.map133377070489791659 0
-67C:\Users\Dmitriy\Desktop\Github\giarddesign\dist\index.e8265c92.css133377071503240397 0
+67C:\Users\Dmitriy\Desktop\Github\giarddesign\dist\index.e8265c92.css133377073377927737 0
 70C:\Users\Dmitriy\Desktop\Github\giarddesign\dist\pict-xs.6f794a5d.webp133377070489331668 0
 70C:\Users\Dmitriy\Desktop\Github\giarddesign\dist\pict-xs.9bd80c06.webp133377070489601651 0
 74C:\Users\Dmitriy\Desktop\Github\giarddesign\dist\pict2-xs@2x.69b73db7.webp133377070489381643 0
