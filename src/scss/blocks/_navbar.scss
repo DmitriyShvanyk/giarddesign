@@ -1,0 +1,53 @@
+.navbar {
+  position: sticky;
+
+  .offcanvas-header {
+    min-height: 80px;
+  }
+}
+
+
+
+#offcanvasNavbarSearch {
+  .form-control {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: none;
+  }
+
+  .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    & {
+      position: fixed;
+      top: 0;
+      right: 0;
+      transform: translateX(100%) !important;
+      height: 100vh !important;
+      width: 100% !important;
+      max-width: 400px !important;
+      background-color: $white !important;
+      transition: transform .3s ease-in-out !important;
+      will-change: transform;
+
+      .offcanvas-header {
+        display: flex !important;
+      }
+
+      .offcanvas-body {
+        padding: 1rem !important;
+      }
+
+      &.show {
+        visibility: visible !important;
+        transform: translateX(0%) !important;
+        z-index: 1045;
+      }
+    }
+  }
+}

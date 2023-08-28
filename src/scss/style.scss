@@ -1,0 +1,130 @@
+@charset 'utf-8';
+
+
+/* ==================== 1. FUNCTIONS ==================== */
+
+@import '../../node_modules/bootstrap/scss/functions';
+
+
+
+/* ==================== 2. DEFAULT VARIABLE ==================== */
+
+$dark: #111;
+$light: #F5F0EC;
+$success: #1B5B31;
+
+$font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font-montserrat: 'Montserrat', $font-family-sans-serif;
+
+$headings-font-weight: 500;
+
+$dropdown-font-size: .875rem;
+$caret-width: 0;
+
+$btn-padding-y: .75rem;
+$btn-padding-x:  1.5rem;
+
+$navbar-padding-y: 1.1rem;
+$navbar-nav-link-padding-x: 1.5rem;
+$nav-link-height: 1rem;
+
+$carousel-control-color: $dark;
+$carousel-control-width: 96px;
+$carousel-control-opacity: 1;
+
+$project-ration-xs: 125%;
+
+
+
+/* ==================== 3. REQUIRED BOOTSTRAP STYLESHEETS ==================== */
+
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/variables-dark';
+
+
+
+/* ==================== 4. DEFAULT MAP OVERRIDES ==================== */
+
+$lead-font-size:  $font-size-base * .75;
+$lead-font-weight: 400;
+
+// add  new color
+$beige: (
+    "beige": #DCC1AB
+);
+
+$theme-colors: map-merge($theme-colors, $beige);
+
+// remove not used color
+$theme-colors: map-remove($theme-colors, "info", "primary", "warning", "secondary");
+
+
+
+/* ==================== 5. REMAINDER OF REQUIRED PARTS ==================== */
+
+@import '../../node_modules/bootstrap/scss/maps';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/root';
+
+
+/* ==================== 6. OPTIONALLY INCLUDE ANY OTHER PARTS AS NEEDED ==================== */
+
+@import '../../node_modules/bootstrap/scss/utilities';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/type';
+@import '../../node_modules/bootstrap/scss/images';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/helpers';
+
+
+/* ==================== 7. UTILITIES API ==================== */
+
+@import '../../node_modules/bootstrap/scss/utilities/api';
+
+
+/* ==================== 8. CUSTOM CODE ==================== */
+
+@import '../../node_modules/bootstrap/scss/close';
+@import '../../node_modules/bootstrap/scss/buttons';
+@import '../../node_modules/bootstrap/scss/dropdown';
+@import '../../node_modules/bootstrap/scss/offcanvas';
+@import '../../node_modules/bootstrap/scss/nav';
+@import '../../node_modules/bootstrap/scss/navbar';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/card';
+@import '../../node_modules/bootstrap/scss/modal';
+@import '../../node_modules/bootstrap/scss/forms/form-control';
+@import '../../node_modules/bootstrap/scss/carousel';
+
+
+
+
+// add new font family class
+
+.font-montserrat {
+    font-family: $font-montserrat;
+}
+
+
+
+
+/* ==================== 8.1 COMPONENTS ==================== */
+
+@import 'components/typography';
+@import 'components/container';
+@import 'components/card';
+@import 'components/carousel';
+@import 'components/dropdown';
+@import 'components/loader';
+
+
+/* ==================== 8.2 BLOCKS ==================== */
+
+@import 'blocks/navbar';
+@import 'blocks/section';
+@import 'blocks/offer';
+@import 'blocks/about';
+@import 'blocks/projects';
+@import 'blocks/contact';
+@import 'blocks/footer';

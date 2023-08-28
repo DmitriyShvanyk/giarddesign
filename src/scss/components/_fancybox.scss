@@ -1,0 +1,30 @@
+html.with-fancybox {
+    font-family: $font-default;
+
+    body {
+        touch-action: unset;
+    }
+
+    .fancybox__backdrop {
+        background: rgba($black, .7);
+    }
+
+    .fancybox__caption {
+        @include flex-center;
+    }
+
+    .fancybox__carousel .fancybox__slide.has-html5video .fancybox__content {
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        object-fit: cover;
+        height: auto!important;
+        width: 50% !important;
+    }
+
+    @media (max-width: 991px) {
+        .fancybox__carousel .fancybox__slide.has-html5video .fancybox__content {
+            width: 90% !important;
+        }
+    }
+}

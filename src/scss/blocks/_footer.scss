@@ -1,0 +1,26 @@
+.footer {
+  &-container {
+    padding-top: 80px;
+    padding-bottom: 64px;
+    max-width: 1104px;
+  }
+
+  &-logo {
+    filter: grayscale(1) invert(1);
+  }
+
+  &-hr {
+    margin-block: 60px;
+    opacity: 1;
+  }
+
+  &-links {
+    margin-bottom: 6rem;
+  }
+
+  @media (max-width: 767px) {
+    &-links {
+      margin-bottom: 3rem;
+    }
+  }
+}

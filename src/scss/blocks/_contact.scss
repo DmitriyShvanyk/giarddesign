@@ -1,0 +1,57 @@
+.contact {
+    scroll-margin-top: 70px;
+
+    &-container {
+        padding-block: 60px;
+    }
+
+    &-box {
+        max-width: 1040px;
+        padding: 120px 110px;
+        border-radius: 1rem;
+    }
+
+    @media (max-width: 1200px) {
+        &-box {
+            padding: 80px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &-container {
+            padding: 0;
+        }
+
+        &-container,
+        &-box {
+            max-width: 100%;
+        }
+
+        &-box {
+            padding: 90px 32px 60px;
+            border-radius: 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &-container {
+            padding: 0;
+        }
+
+        &-container,
+        &-box {
+            max-width: 100%;
+        }
+
+        &-box {
+            padding: 80px 32px;
+            border-radius: 0;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &-box {
+            padding-inline: 16px;
+        }
+    }
+}

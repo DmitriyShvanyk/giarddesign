@@ -1,0 +1,52 @@
+.section {
+    &-pict {
+        top: 0;
+        right: 0;
+        width: 47.5%;
+    }
+
+    &-text {
+        max-width: 490px;
+        margin-bottom: 4.5rem;
+    }
+
+    &-buttons {
+        column-gap: 2.25rem;
+        row-gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        &-pict {
+            position: absolute;
+        }
+    }
+
+    @media (min-width: 992px) {
+        & {
+            min-height: 737px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        &-text {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &-content {
+            padding-block: 80px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &-pict {
+            width: 100%!important;
+            aspect-ratio: 16 / 9;
+        }
+
+        &-content {
+            padding-top: 40px;
+        }
+    }
+}

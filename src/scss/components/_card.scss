@@ -1,0 +1,54 @@
+.card {
+    border: none;
+    padding: 48px 40px 32px;
+    border-radius: 28px;
+    will-change: transform;
+    transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+
+    &-icon {
+        max-height: 44px;
+        margin-bottom: 2rem;
+    }
+
+    &-title {
+        font-size: 1.75rem;
+        letter-spacing: -.025rem;
+        margin-bottom: 0.75rem;
+    }
+
+    &-lead {
+        letter-spacing: -.01rem;
+    }
+
+    &-link {
+        border-bottom: 1px solid $success;
+        will-change: opacity;
+        transition: border-color .3s ease;
+    }
+
+    &-link-icon {
+        will-change: transform;
+        transition: transform .3s ease;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: 0 1px 15px rgba($dark, .05);
+        transform: translateY(-10px);
+
+        .card-link {
+            border-color: transparent;
+        }
+
+        .card-link-icon {
+            transform: translateX(10px)
+        }
+    }
+
+    @media (max-width: 576px) {
+        & {
+            padding: 24px 24px 16px;
+        }
+    }
+}
