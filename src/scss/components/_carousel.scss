@@ -4,18 +4,16 @@
         right: 0;
         width: calc($carousel-control-width / 2 * 2);
         height: calc($carousel-control-width / 2);
-    }
 
-    .btn {
-        min-width: calc($carousel-control-width / 2);
-        box-shadow: none;
-        border-radius: 0;
+        .btn {
+            min-width: calc($carousel-control-width / 2);
+            box-shadow: none;
+            border-radius: 0;
 
-        .carousel-control-next-icon,
-        .carousel-control-prev-icon {
-            background-image: none;
-            width: calc($carousel-control-width / 2);
-            height: calc($carousel-control-width / 2);
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
         }
     }
 
@@ -23,23 +21,14 @@
         .carousel-controls {
             width: calc($carousel-control-width * 2);
             height: $carousel-control-width;
-        }
 
-        .btn {
-            min-width: $carousel-control-width;
-
-            .carousel-control-next-icon,
-            .carousel-control-prev-icon {
-                width: 3rem;
-                height: 3rem;
-            }
-        }
-    }
-
-    @media (max-width: 767px) {
-        .carousel-controls {
             .btn {
-                padding: 0;
+                min-width: $carousel-control-width;
+
+                svg {
+                    width: 3rem;
+                    height: 3rem;
+                }
             }
         }
     }
