@@ -18,18 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         AOS.init({ once: true });
         setCurrentYears();
 
-
-        function handleIntersection(entries) {
-            entries.map((entry) => {
-                if (entry.isIntersecting) {
-                    renderProjects();
-                    showMoreProjects();
-                    initModalProjects();
-                }
-            });
-        }
-
-        const observer = new IntersectionObserver(handleIntersection);
-        observer.observe(projects);
+        renderProjects();
+        showMoreProjects();
+        initModalProjects();
     }, 1500);
 });

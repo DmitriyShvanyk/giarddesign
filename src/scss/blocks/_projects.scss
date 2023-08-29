@@ -178,6 +178,10 @@
     }
 
     @media (max-width: 767px) {
+        & {
+            scroll-margin-top: 70px;
+        }
+
         &-items {
             grid-gap: 16px;
             max-height: 750px;
