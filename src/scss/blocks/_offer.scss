@@ -16,6 +16,10 @@
 
     &-col {
         scroll-margin-top: 100px;
+
+        &.active .offer-card{
+            box-shadow: 0 0 0 .25rem $success;
+        }
     }
 
     @media (min-width: 992px) {

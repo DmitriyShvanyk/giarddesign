@@ -1,32 +1,5 @@
-import { projectsData } from '../data/projects';
-
-
-const projects = document.querySelector('.projects')
-const projectsItems = projects.querySelector('.projects-items')
-
-export function renderProjects() {
-    projectsItems.innerHTML = '';
-
-    const projectHTML = projectsData.map((item, idx) => `
-        <a class="projects-item d-flex position-relative overflow-hidden"
-            href="${item.img2x}"
-            data-bs-toggle="modal"
-            data-bs-target="#modalProjectImage"
-            aria-label="${item.caption}"
-            data-id="${idx + 1}"
-            data-aos="fade-up"
-            data-aos-duration="1000">
-            <img
-                class="projects-img object-fit-cover w-100"
-                src="${item.img}"
-                srcset="${item.img2x}"
-                loading="lazy"
-                alt="${item.caption}">
-        </a>`
-    ).join('');
-
-    projectsItems.insertAdjacentHTML('beforeend', projectHTML);
-}
+const projects = document.querySelector('.projects');
+const projectsItems = projects.querySelector('.projects-items');
 
 export function showMoreProjects() {
     const projectsBtnMore = projects.querySelector('.projects-btn-more');
@@ -54,7 +27,7 @@ export function initModalProjects() {
 
             const image = document.createElement('img');
             image.src=item.href;
-            image.alt="";
+            image.alt = '';
             image.classList.add('img-fluid', 'object-fit-cover');
 
             modalBody.appendChild(image);

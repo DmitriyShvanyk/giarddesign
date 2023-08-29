@@ -109,7 +109,6 @@ $theme-colors: map-remove($theme-colors, "info", "primary", "warning", "secondar
 
 
 
-
 /* ==================== 8.1 COMPONENTS ==================== */
 
 @import 'components/typography';
@@ -129,3 +128,8 @@ $theme-colors: map-remove($theme-colors, "info", "primary", "warning", "secondar
 @import 'blocks/projects';
 @import 'blocks/contact';
 @import 'blocks/footer';
+
+
+/* ==================== 8.3 PLUGINS ==================== */
+
+@import '../../node_modules/aos/src/sass/aos.scss';
